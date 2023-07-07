@@ -13,7 +13,7 @@
   },
   "rules": {
     "max-len": ["error", { "code": 150 }],
-    "quotes": ["error", "single", { "avoidEscape": true }]
+    "quotes": ["error", "double", { "avoidEscape": true }]
   }
 }
 
