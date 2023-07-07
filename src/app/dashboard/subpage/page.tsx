@@ -1,5 +1,11 @@
+import NotFoundComponent from "./components/NotFoundComponent";
+
 function SubPage() {
-  return <div>SubPage</div>;
+  return (
+    <div>
+      <NotFoundComponent />
+    </div>
+  );
 }
 
 export default SubPage;
