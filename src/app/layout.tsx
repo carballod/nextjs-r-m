@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Rick and Morty",
-  description: "Next",
+  description: "Nextjs app with Rick and Morty API",
 };
 
 export default function RootLayout({
@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>{children}</body>
     </html>
   );
