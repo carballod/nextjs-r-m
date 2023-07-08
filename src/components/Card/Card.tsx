@@ -1,9 +1,14 @@
-import { Character } from "@/app/characters/models";
-import "./Card.css";
 import Image from "next/image";
+import "./Card.css";
 
+export interface CardData {
+  name: string;
+  type?: string;
+  created: string;
+  image?: string;
+}
 interface Props {
-  data: Character;
+  data: CardData;
 }
 
 function Card({ data }: Props) {
@@ -12,7 +17,9 @@ function Card({ data }: Props) {
       <p>Name: {data.name}</p>
       <p>Type: {data.type ? data.type : "No type"}</p>
       <p>Created: {data.created}</p>
-      <Image width="100" height="100" alt="Image" src={data.image} />
+      {data.image && (
+        <Image width="100" height="100" alt="Image" src={data.image} />
+      )}
     </div>
   );
 }
